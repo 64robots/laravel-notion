@@ -2,9 +2,9 @@
 
 namespace R64\Notion;
 
+use R64\Notion\Commands\NotionCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use R64\Notion\Commands\NotionCommand;
 
 class NotionServiceProvider extends PackageServiceProvider
 {
