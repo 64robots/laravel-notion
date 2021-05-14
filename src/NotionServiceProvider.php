@@ -3,8 +3,8 @@
 namespace R64\Notion;
 
 use Exception;
-use R64\PhpNotion\Notion as PhpNotion;
 use R64\Notion\Facades\Notion;
+use R64\PhpNotion\Notion as PhpNotion;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
