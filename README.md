@@ -1,4 +1,4 @@
-# Package to work with Notion APIfrom Laravel
+# Package to work with Notion API from Laravel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/64robots/laravel-notion.svg?style=flat-square)](https://packagist.org/packages/64robots/laravel-notion)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/64robots/laravel-notion/run-tests?label=tests)](https://github.com/64robots/laravel-notion/actions?query=workflow%3Arun-tests+branch%3Amain)
@@ -23,16 +23,10 @@ NOTION_ACCESS_TOKEN=YourAccessTokenToNotion
 
 ## Customization
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --provider="R64\Notion\NotionServiceProvider" --tag="laravel-notion-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
+
 ```bash
-php artisan vendor:publish --provider="R64\Notion\NotionServiceProvider" --tag="laravel-notion-config"
+php artisan vendor:publish --provider="R64\LaravelNotion\NotionServiceProvider" --tag="laravel-notion-config"
 ```
 
 This is the contents of the published config file:
@@ -46,8 +40,9 @@ return [
 ## Usage
 
 ```php
-$notion = new R64\Notion();
-echo $notion->echoPhrase('Hello, Notion!');
+use R64\LaravelNotion\Facades\Notion;
+
+$database = Notion::databases()->retrieve('a65b5216-46cb-479b-961e-67cc7b05a56d');
 ```
 
 ## Testing

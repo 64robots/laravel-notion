@@ -1,9 +1,9 @@
 <?php
 
-namespace R64\Notion\Tests;
+namespace R64\LaravelNotion\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use R64\Notion\NotionServiceProvider;
+use R64\LaravelNotion\NotionServiceProvider;
 
 class TestCase extends Orchestra
 {

@@ -16,12 +16,6 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../php-notion"
-        }
-    ],
     "require": {
         "php": "^7.4|^8.0",
         "spatie/laravel-package-tools": "^1.4.3",
@@ -37,13 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "R64\\Notion\\": "src",
-            "R64\\Notion\\Database\\Factories\\": "database/factories"
+            "R64\\LaravelNotion\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "R64\\Notion\\Tests\\": "tests"
+            "R64\\LaravelNotion\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -57,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "R64\\Notion\\NotionServiceProvider"
+                "R64\\LaravelNotion\\NotionServiceProvider"
             ],
             "aliases": {
-                "Notion": "R64\\Notion\\Facades\\Notion"
+                "Notion": "R64\\LaravelNotion\\Facades\\Notion"
             }
         }
     },

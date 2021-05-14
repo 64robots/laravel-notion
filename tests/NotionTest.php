@@ -1,10 +1,10 @@
 <?php
 
-namespace R64\Notion\Tests;
+namespace R64\LaravelNotion\Tests;
 
 use Exception;
 use Illuminate\Support\Facades\Config;
-use R64\Notion\Facades\Notion;
+use R64\LaravelNotion\Facades\Notion;
 use R64\PhpNotion\Resources\Databases;
 
 class NotionTest extends TestCase

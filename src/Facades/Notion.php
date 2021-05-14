@@ -1,16 +1,16 @@
 <?php
 
-namespace R64\Notion\Facades;
+namespace R64\LaravelNotion\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \R64\Notion\Notion
+ * @see \R64\PhpNotion\Notion
  */
 class Notion extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'notion';
+        return 'php-notion';
     }
 }
