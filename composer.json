@@ -16,10 +16,17 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../php-notion"
+        }
+    ],
     "require": {
         "php": "^7.4|^8.0",
         "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "illuminate/contracts": "^8.37",
+        "64robots/php-notion": "*"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
@@ -53,7 +60,7 @@
                 "R64\\Notion\\NotionServiceProvider"
             ],
             "aliases": {
-                "Notion": "R64\\Notion\\NotionFacade"
+                "Notion": "R64\\Notion\\Facades\\Notion"
             }
         }
     },
