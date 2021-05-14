@@ -17,9 +17,6 @@ class NotionServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-notion')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-notion_table')
-            ->hasCommand(NotionCommand::class);
+            ->hasConfigFile();
     }
 }

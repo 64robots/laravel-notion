@@ -2,10 +2,10 @@
 
 namespace R64\Notion\Tests;
 
-class ExampleTest extends TestCase
+class NotionTest extends TestCase
 {
     /** @test */
-    public function true_is_true()
+    public function it_knows_about_config()
     {
         $this->assertTrue(true);
     }

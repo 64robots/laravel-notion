@@ -15,6 +15,14 @@ You can install the package via composer:
 composer require 64robots/laravel-notion
 ```
 
+Add to your environment file (usually `.env`) the key:
+
+```dotenv
+NOTION_ACCESS_TOKEN=YourAccessTokenToNotion
+```
+
+## Customization
+
 You can publish and run the migrations with:
 
 ```bash
@@ -31,6 +39,7 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'access_token' => env('NOTION_ACCESS_TOKEN'),
 ];
 ```
 
