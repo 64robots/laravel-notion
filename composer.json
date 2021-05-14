@@ -20,7 +20,7 @@
         "php": "^7.4|^8.0",
         "spatie/laravel-package-tools": "^1.4.3",
         "illuminate/contracts": "^8.37",
-        "64robots/php-notion": "*"
+        "64robots/php-notion": "^0.1"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
