@@ -2,7 +2,6 @@
 
 namespace R64\Notion\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 use R64\Notion\NotionServiceProvider;
 
